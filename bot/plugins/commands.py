@@ -28,14 +28,14 @@ async def start(bot, update):
             await update.reply_cached_media(
                 file_id,
                 quote=True,
-                caption = caption,
+                caption = "@racoons"
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton
                                 (
-                                    '⚠️Join channel⚠️', url="https:https://t.me/whitedevilFZg610EpRd0wNGZl"
+                                    '⚠️Join channel⚠️', url="https://t.me/whitedevilFZg610EpRd0wNGZl"
                                 )
                         ]
                     ]
@@ -45,9 +45,8 @@ async def start(bot, update):
             await update.reply_text(f"<b>Error:</b>\n<code>{e}</code>", True, parse_mode="html")
             LOGGER(__name__).error(e)
         return
-
-    buttons = [[
-        InlineKeyboardButton('Developers', url='https://t.me/CrazyBotsz'),
+    buttons = [[in 
+        InlineKeyboardButton('join channel', url='https://t.me/whitedevilFZg610EpRd0wNGZl'),
         InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot-V2')
     ],[
         InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
